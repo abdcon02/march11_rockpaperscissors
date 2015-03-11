@@ -24,7 +24,8 @@
 
         $win = $winner->rpsResult($_POST['player1'], $player2);
 
-        return $app['twig']->render('winner.twig', array('winner' => $win, 'player1' => $_POST['player1'], 'player2' => $player2));
+        return $app['twig']->render('winner.twig',
+        array('winner' => $win, 'player1' => $_POST['player1'], 'player2' => $player2));
 
     });
 
