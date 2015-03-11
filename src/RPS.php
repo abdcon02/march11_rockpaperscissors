@@ -24,6 +24,22 @@
 
             }
         }
+
+        function rpsSinglePlayer()
+        {
+            $random = rand(1, 3);
+
+            if ($random == 1) {
+                $input_2 = "rock";
+            } elseif ($random == 2) {
+                $input_2 = "paper";
+            } elseif ($random == 3) {
+                $input_2 = "scissors";
+            }
+
+            return $input_2;
+            
+        }
     }
 
 ?>

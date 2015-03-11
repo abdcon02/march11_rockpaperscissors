@@ -17,7 +17,14 @@
     $app->post("/winner", function() use ($app) {
 
         $winner = new RPS;
-        $win = $winner->rpsResult($_POST['player1'], $_POST['player2']);
+
+        $second = $_POST['player2'];
+
+        if (!isset($second)) {
+            $second = $winner->rpsSinglePlayer();
+        } 
+
+        $win = $winner->rpsResult($_POST['player1'], $second);
 
         return $app['twig']->render('winner.twig', array('winner' => $win));
 

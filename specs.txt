@@ -32,6 +32,13 @@ x 1c) If users input the same value, it's a draw. Capitalization
         Input 2 = Rock
         Output = Paper wins!
 
+5) Randomize player 2 input and return correct winner.
+    ex Input1 = Rock
+       Input2 = ? (in this case computer chooses Rock)
+       Output = DRAW!
+
+
+
 
 ---------------
 NOTES

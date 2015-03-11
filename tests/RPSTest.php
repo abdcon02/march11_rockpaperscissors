@@ -105,6 +105,30 @@
             $this->assertEquals("Player 1 Wins!", $result);
         }
 
+        function test_1player()
+        {
+            $test_RockPaperScissors = new RPS;
+            $user_1 = "paper";
+
+            $user_2 = rand(1,3);
+
+            if ($user_2 == 1){
+                $user_2 = "Player 2 Wins";
+                $input = "rock";
+            } elseif ($user_2 == 2){
+                $user_2 = "DRAW!";
+                $input = "paper";
+            } elseif ($user_2 == 3){
+                $user_2 = "Player 1 Wins";
+                $input = "scissors";
+            }
+
+            $result = $test_RockPaperScissors->rpsResult($user_1, $input);
+
+            $this->assertEquals($user_2, $result);
+        }
+
+
 
     }
 
