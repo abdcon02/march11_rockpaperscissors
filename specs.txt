@@ -1,0 +1,42 @@
+---------------
+HOW
+---------------
+
+x 1a) If both users input (Rock), it's a draw.
+    ex: Input 1 = Rock
+        Input 2 = Rock
+        Output = Draw!
+
+x 1b) If users input the same value, it's a draw.
+    ex: Input 1 = x
+        Input 2 = x
+        Output = Draw!
+
+x 1c) If users input the same value, it's a draw. Capitalization
+    ex: Input 1 = RoCK
+        Input 2 = rock
+        Output = Draw!
+
+2) Rock should beat scissors //And backwards
+    ex: Input 1 = Rock
+        Input 2 = Scissors
+        Output = Rock wins!
+
+3) Scissors should beat paper
+    ex: Input 1 = Scissors
+        Input 2 = Paper
+        Output = Scissors wins!
+
+4) Paper should beat Rock.
+    ex: Input 1 = Paper
+        Input 2 = Rock
+        Output = Paper wins!
+
+
+---------------
+NOTES
+---------------
+
+Rock v. Scissors = Rock wins
+Rock v. Paper = Paper wins
+Paper v. Scissors = Scissors wins
