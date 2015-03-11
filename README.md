@@ -10,7 +10,7 @@ It seeks to solidify the concepts of Behavior Driven Development and Object Orie
 
 ##Use and Editing
 To use the app, download the source code and run it in on your php server.
-To edit the app, download the source code and open it in your text editor.
+To edit the app, download the source code and open it in your text editor. <br />
     *Note: If you are copying any of the code to your own directories, you may need to install Composer
     in your root directory.*
 
