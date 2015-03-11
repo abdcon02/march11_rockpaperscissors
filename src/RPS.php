@@ -30,15 +30,15 @@
             $random = rand(1, 3);
 
             if ($random == 1) {
-                $input_2 = "rock";
+                $input_2 = "Rock";
             } elseif ($random == 2) {
-                $input_2 = "paper";
+                $input_2 = "Paper";
             } elseif ($random == 3) {
-                $input_2 = "scissors";
+                $input_2 = "Scissors";
             }
 
             return $input_2;
-            
+
         }
     }
 
