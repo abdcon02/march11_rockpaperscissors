@@ -7,14 +7,22 @@
         <div class='container'>
             <h1>The winner is:</h1>
                 <p> {{ winner }} </p>
-                <h2>You Chose:</h2>
+                <h2>Player 1 Chose:</h2>
                     <p>
                         {{ player1 }}
                     </p>
+            {% if check is not empty %}
                 <h2>The Computer Chose:</h2>
                     <p>
                         {{ player2 }}
                     </p>
+            {% endif %}
+            {% if check is empty %}
+                <h2>Player 2 Chose:</h2>
+                    <p>
+                        {{ player2 }}
+                    </p>
+            {% endif %}
                 <a href="/"><button class='btn btn-danger'>Go Back</button></a>
         </div>
     </body>
